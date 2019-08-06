@@ -16,4 +16,6 @@ for i in range(0, len(all_image)):
     if x == lines:
         x = 0
         y += 1
-image.save('D://images' + "/" + "all.jpg")
+if os.path.exists("D://images/all.jpg"):
+        os.remove("D://images/all.jpg")
+image.save('D://images/all.jpg')
