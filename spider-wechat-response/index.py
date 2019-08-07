@@ -1,3 +1,8 @@
+
+# 安装lxml，需先安装wheel,然后下载指定的lxml包，进行本地安装，lxml的包需要对应python的版本号及位数
+#python 安装的为32位程序则下载32位的包，并不是按照操作系统的位数，64位操作系统32位python，所需lxml版本为32位版本
+
+
 import requests
 from lxml import etree
 from bs4 import BeautifulSoup
