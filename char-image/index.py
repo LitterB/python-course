@@ -31,7 +31,12 @@ def get_char(r, g, b, alpha = 256):
 
 if __name__ == "__main__":
     im = Image.open(IMG)
-    im = im.resize((WIDTH, HEIGHT), Image.NEAREST)
+    #Image.NEAREST 低质量
+    #Image.BILINEAR 双线性
+    #Image.BICUBIC  三次样条差值
+    #Image.ANTIALIAS 高质量
+    #im = im.resize((WIDTH, HEIGHT), Image.NEAREST)
+    im = im.resize((WIDTH, HEIGHT), Image.ANTIALIAS)
 
     txt = ""
 
